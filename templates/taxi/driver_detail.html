@@ -2,6 +2,6 @@
 
 {% block content %}
   {% for car in driver.cars.all %}
-    <p>{{ car.model }}</p>
+    <p>{{ car.model }} {{ car.manufacturer.name }} {{ car.manufacturer.country }}</p>
   {% endfor %}
 {% endblock %}
